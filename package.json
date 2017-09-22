@@ -1,0 +1,21 @@
+{
+  "name": "sns-sqs-simple",
+  "version": "0.0.1.beta.1",
+  "description": "A simple and elegant wrapper for AWS SNS and SQS",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/B-3PO/sns-sqs-simple.git"
+  },
+  "author": "Ben Rubin",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.117.0"
+  }
+}
