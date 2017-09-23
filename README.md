@@ -2,6 +2,9 @@
 A simple and elegant wrapper for AWS SNS and SQS
 
 
+# documentation
+  [Documentation Web Page](https://b-3po.github.io/sns-sqs-simple/)
+
 # Usage
 
 ## Example
