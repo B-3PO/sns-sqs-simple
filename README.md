@@ -5,6 +5,11 @@ A simple and elegant wrapper for AWS SNS and SQS
 # documentation
   [Documentation Web Page](https://b-3po.github.io/sns-sqs-simple/)
 
+# Run locally
+To use sqs and sns locally you have many options. Here are 2 options i have used
+- [goaws](https://github.com/p4tin/goaws)
+- [Mock Tool](https://www.npmjs.com/package/aws-sdk-mock)
+
 # Usage
 
 ## Example
