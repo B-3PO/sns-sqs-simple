@@ -1,0 +1,14 @@
+{
+  "source": {
+    "includePattern": ".*\\.(js)$",
+    "exclude": ["./node_modules/", "./docs/"]
+  },
+  "sourceType": "module",
+  "recurseDepth": 10,
+  "templates": {
+    "systemName": "sns-sqs-simple",
+    "navType": "vertical",
+    "theme": "paper",
+    "search": "true"
+  }
+}
