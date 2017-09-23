@@ -1,15 +1,9 @@
-// TODO remove env vars
-process.env.AWS_KEY = 'AKID';
-process.env.AWS_SECRET = 'SECRET';
-process.env.AWS_REGION = 'us-east-1';
-process.env.SQS_ENDPOINT = 'http://localhost:4100';
-
 const AWS = require('aws-sdk');
-AWS.config.update({
-  accessKeyId: process.env.AWS_KEY,
-  secretAccessKey: process.env.AWS_SECRET,
-  region: process.env.AWS_REGION,
-  endpoint: process.env.SQS_ENDPOINT
-});
+let config = {};
+if (process.env.AWS_KEY) config.accessKeyId = process.env.AWS_KEY;
+if (process.env.AWS_SECRET) config.secretAccessKey = process.env.AWS_SECRET;
+if (process.env.AWS_REGION) config.region = process.env.AWS_REGION;
+if (process.env.SQS_ENDPOINT) config.endpoint = process.env.SQS_ENDPOINT;
+if (Object.keys(config).length) AWS.config.update(config);
 
 module.exports = require('./lib/events');
