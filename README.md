@@ -8,7 +8,7 @@ A simple and elegant wrapper for AWS SNS and SQS
 # Usage
 
 ## Example
-Ij this example we will subscribe a topic to a queue, publish messages to it, and process them.
+In this example we will subscribe a topic to a queue, publish messages to it, and process them.
 
 ```javascript
 const snssqs = require('sns-sqs-simple');
